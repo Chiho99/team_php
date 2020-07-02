@@ -1,6 +1,6 @@
 <?php
 
-public DAO {
+class DAO {
   public function FindAll(){
     // データベースへの接続
     $con = mysqli_connect("", "", "", "");
