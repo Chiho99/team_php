@@ -4,7 +4,9 @@ class DAO {
   public function FindAll(){
     // データベースへの接続
     $con = mysqli_connect("153.127.30.45", "prtimes", "Prtimes2020#", "prtimes");
+    echo("データベースに接続しています");
     if($con == FALSE){
+      echo("データベースに接続できませんでした");
       return FALSE;
     }
 
