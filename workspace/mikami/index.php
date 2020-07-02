@@ -5,7 +5,7 @@ include_once("../togawa/DB/DAO.php");
 $dao = new DAO();
 
 // FindAllメソッドを使用してテーブルのすべてのレコードを取得
-$records = $dao->FindAll();
+$records = array("title", "title", "title", "title", "title", "title");
  ?>
 
 <!DOCTYPE html>

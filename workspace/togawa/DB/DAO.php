@@ -31,7 +31,7 @@ class DAO {
     // データベースの接続を切断
     mysqli_close($con);
 
-    $records = array("title", "title", "title", "title", "title", "title");
+  
     return $records;
   }
 
