@@ -6,7 +6,16 @@ header{
     height: 50px;
     color: white;
 }
-
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 10%;
+}
+footer{
+    background-color: #FAFAFA;
+    padding: 0 10%;
+}
 .header_bottom ul{
     display: flex;
     flex-direction: row;
@@ -22,22 +31,13 @@ header{
     color: white;
     text-decoration: none;
 }
-main{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0 10%;
-}
-footer{
-    height: 300px;
-    background-color: #FAFAFA;
-}
-.footer_upper ul{
-    list-style: none;
-}
+
 .main_left{
     width: 70%;
     border: solid 2px;
+}
+.main_left ul{
+    list-style: none;
 }
 .main_right{
     /* border: solid 2px; */
@@ -48,4 +48,25 @@ footer{
     background-color: rgba(153, 153, 153, 0.2);
     border: none;
     box-shadow:  2px 0px 2px 2px gray inset;
+}
+footer ul{
+    /* background-color: slateblue; */
+    padding: 0px;
+}
+.footer_upper ul{
+    list-style: none;
+}
+.footer_news ul{
+    padding-left: 0%;
+}
+.footer_upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_bottom ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
 }
