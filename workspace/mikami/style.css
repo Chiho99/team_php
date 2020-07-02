@@ -1,57 +1,115 @@
 *{
     margin: 0;
+    font-family: sans-serif, ;
 }
 header{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
     background-color: #294C7A;
     height: 50px;
     color: white;
+    padding: 1% 10% 0% 10%;
 }
 main{
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 0 10%;
+    margin-top: 20px;
 }
 footer{
     background-color: #FAFAFA;
     padding: 0 10%;
+    color: #797979;
+    font-size: 12px;
+}
+footer h2{
+    color: black;
+    font-weight: lighter;
+    font-size: 13px;
+}
+select{
+    background-color: transparent;
+    border: none;
+    color: black;
 }
 .header_bottom ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     list-style: none;
     padding: none;
+    font-size: 12px;
+    width: 80%;
+    padding-left: 0%;
 }
+
 .header_bottom li{
     display: flex;
+    flex-direction: row;
     
 }
 .header_bottom a{
     color: white;
     text-decoration: none;
 }
-
+hr{
+    color: #294C7A;
+    font-weight: bold;
+}
 .main_left{
     width: 70%;
-    border: solid 2px;
 }
 .main_left ul{
     list-style: none;
 }
+.pv_ranking li{
+    padding: 16px 0px;
+    margin: 20px;
+}
+.load_more{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* width: 100%; */
+}
+.load_more button{
+   border: solid 2px;
+   border-color: none;
+}
+.load_more_btn{
+    background-color: rgba(153, 153, 153, 0.2);
+    border: none;
+    border-radius: 2px;
+    height: 38px;
+}
+
 .main_right{
     /* border: solid 2px; */
     width: 30%;
     /* background-color: yellow; */
 }
-.load_more{
-    background-color: rgba(153, 153, 153, 0.2);
-    border: none;
-    box-shadow:  2px 0px 2px 2px gray inset;
+.main_right i{
+    color: #294C7A;  
+}
+.main_right button{
+    background-color: #999999;
+    border-color: transparent;
+}
+.main_right input{
+    border-color: #999999;
+    opacity: 0.8;
+    border: lighter;
+    border-radius: 2px;
 }
 footer ul{
     /* background-color: slateblue; */
     padding: 0px;
+}
+.footer_upper{
+    padding-top: 73px;
+    margin-bottom: 22px;
 }
 .footer_upper ul{
     list-style: none;
@@ -59,12 +117,18 @@ footer ul{
 .footer_news ul{
     padding-left: 0%;
 }
+.footer_recommend_wrap{
+  display: flex; 
+  flex-direction: column; 
+}
 .footer_upper{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
+.footer_bottom{
+    margin: 16px 0px 12px;
+}
 .footer_bottom ul {
     display: flex;
     flex-direction: row;
