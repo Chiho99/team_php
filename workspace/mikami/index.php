@@ -54,7 +54,7 @@ $records = $dao->FindAll();
             パソコンのプレリリース一覧
             <ul>
               <?php foreach($records as $record) {?>
-                <li><?=$record["pv"] ?></li>
+                <li><?=$record["tmp"] ?></li>
               <?php } ?>
                 <li></li>
                 <li></li>

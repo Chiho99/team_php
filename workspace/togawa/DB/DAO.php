@@ -3,7 +3,7 @@
 class DAO {
   public function FindAll(){
     // データベースへの接続
-    $con = mysqli_connect("", "", "", "");
+    $con = mysqli_connect("153.127.30.45", "prtimes", "Prtimes2020#", "prtimes");
     if($con == FALSE){
       return FALSE;
     }
