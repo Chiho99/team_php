@@ -9,12 +9,13 @@ class DAO {
       echo("データベースに接続できませんでした");
       return FALSE;
     }
+    echo("データベースに接続できました！");
 
     // 文字コードの設定
     mysqli_set_charset($con, "utf8");
 
     // SQLの実行
-    $sql = "";
+    $sql = "SELECT tmp FROM prtimes";
     $result = mysqli_query($con, $sql);
 
     // レコードの取得
@@ -25,7 +26,7 @@ class DAO {
     }
 
     // 検索結果をメモリから解放
-    mysqli_free_reslut($result);
+    mysqli_free_result($result);
 
     // データベースの接続を切断
     mysqli_close($con);
