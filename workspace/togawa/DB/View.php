@@ -1,9 +1,9 @@
 <?php
-include_once("DAO.php");
+//include_once("DAO.php");
 
 // DAOのインスタンスを生成
-$dao = new DAO();
+//$dao = new DAO();
 
 // FindAllメソッドを使用してテーブルのすべてのレコードを取得
-$records = $dao->FindAll();
+//$records = $dao->FindAll();
  ?>

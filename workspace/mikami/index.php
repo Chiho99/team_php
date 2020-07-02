@@ -1,3 +1,13 @@
+<?php
+include_once("../togawa/DB/DAO.php");
+
+// DAOのインスタンスを生成
+$dao = new DAO();
+
+// FindAllメソッドを使用してテーブルのすべてのレコードを取得
+$records = $dao->FindAll();
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +53,9 @@
         <div class="main_left">
             パソコンのプレリリース一覧
             <ul>
-                <li></li>
+              <?php foreach($records as $record) {?>
+                <li><?=$record["pv"] ?></li>
+              <?php } ?>
                 <li></li>
                 <li></li>
                 <li></li>
@@ -87,12 +99,12 @@
                 <button class="load_more">もっと見る</button>
                 </li>
             </ul>
-            
+
         </div>
         <div class="main_right">
             検索
             <input value="キーワードで検索"><button><i class="fas fa-search"></i></button>
-            
+
         </div>
     </main>
     <footer>
