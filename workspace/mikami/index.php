@@ -1,11 +1,11 @@
 <?php
-// include_once("../togawa/DB/DAO.php");
+include_once("../togawa/DB/DAO.php");
 
 // DAOのインスタンスを生成
-// $dao = new DAO();
+$dao = new DAO();
 
 // FindAllメソッドを使用してテーブルのすべてのレコードを取得
-// $records = $dao->FindAll();
+$records = $dao->FindAll();
  ?>
 
 <!DOCTYPE html>
@@ -34,7 +34,7 @@
         </div>
         <div class="header_bottom">
             <ul>
-                <!-- <li><a href="https://prtimes.jp/">Top</a></li>
+                <li><a href="https://prtimes.jp/">Top</a></li>
                 <li><a href="https://prtimes.jp/technology/">テクノロジー</li>
                 <li><a href="https://prtimes.jp/mobile/">モバイル</li>
                 <li><a href="https://prtimes.jp/app/">アプリ</li>
@@ -44,7 +44,7 @@
                 <li><a href="https://prtimes.jp/lifestyle/">ライフスタイル</li>
                 <li><a href="https://prtimes.jp/business/">ビジネス</li>
                 <li><a href="https://prtimes.jp/gourmet/">グルメ</li>
-                <li><a href="https://prtimes.jp/sports/">スポーツ</li> -->
+                <li><a href="https://prtimes.jp/sports/">スポーツ</li>
             </ul>
         </div>
         </div>
