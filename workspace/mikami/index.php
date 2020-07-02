@@ -35,16 +35,16 @@ $records = $dao->FindAll();
         <div class="header_bottom">
             <ul>
                 <li><a href="https://prtimes.jp/">Top</a></li>
-                <li><a href="https://prtimes.jp/technology/">テクノロジー</li>
-                <li><a href="https://prtimes.jp/mobile/">モバイル</li>
-                <li><a href="https://prtimes.jp/app/">アプリ</li>
-                <li><a href="https://prtimes.jp/entertainment/">エンタメ</li>
-                <li><a href="https://prtimes.jp/beauty/">ビューティー</li>
-                <li><a href="https://prtimes.jp/fashion/">ファッション</li>
-                <li><a href="https://prtimes.jp/lifestyle/">ライフスタイル</li>
-                <li><a href="https://prtimes.jp/business/">ビジネス</li>
-                <li><a href="https://prtimes.jp/gourmet/">グルメ</li>
-                <li><a href="https://prtimes.jp/sports/">スポーツ</li>
+                <li><a href="https://prtimes.jp/technology/">テクノロジー</a></li>
+                <li><a href="https://prtimes.jp/mobile/">モバイル</a></li>
+                <li><a href="https://prtimes.jp/app/">アプリ</a></li>
+                <li><a href="https://prtimes.jp/entertainment/">エンタメ</a></li>
+                <li><a href="https://prtimes.jp/beauty/">ビューティー</a></li>
+                <li><a href="https://prtimes.jp/fashion/">ファッション</a></li>
+                <li><a href="https://prtimes.jp/lifestyle/">ライフスタイル</a></li>
+                <li><a href="https://prtimes.jp/business/">ビジネス</a></li>
+                <li><a href="https://prtimes.jp/gourmet/">グルメ</a></li>
+                <li><a href="https://prtimes.jp/sports/">スポーツ</a></li>
             </ul>
         </div>
         </div>
