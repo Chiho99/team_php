@@ -1,11 +1,11 @@
 <?php
-include_once("../togawa/DB/DAO.php");
+// include_once("../togawa/DB/DAO.php");
 
 // DAOのインスタンスを生成
-$dao = new DAO();
+// $dao = new DAO();
 
 // FindAllメソッドを使用してテーブルのすべてのレコードを取得
-$records = $dao->FindAll();
+// $records = $dao->FindAll();
  ?>
 
 <!DOCTYPE html>
@@ -34,7 +34,7 @@ $records = $dao->FindAll();
         </div>
         <div class="header_bottom">
             <ul>
-                <li><a href="https://prtimes.jp/">Top</a></li>
+                <!-- <li><a href="https://prtimes.jp/">Top</a></li>
                 <li><a href="https://prtimes.jp/technology/">テクノロジー</li>
                 <li><a href="https://prtimes.jp/mobile/">モバイル</li>
                 <li><a href="https://prtimes.jp/app/">アプリ</li>
@@ -44,7 +44,7 @@ $records = $dao->FindAll();
                 <li><a href="https://prtimes.jp/lifestyle/">ライフスタイル</li>
                 <li><a href="https://prtimes.jp/business/">ビジネス</li>
                 <li><a href="https://prtimes.jp/gourmet/">グルメ</li>
-                <li><a href="https://prtimes.jp/sports/">スポーツ</li>
+                <li><a href="https://prtimes.jp/sports/">スポーツ</li> -->
             </ul>
         </div>
         </div>
@@ -109,9 +109,9 @@ $records = $dao->FindAll();
     </main>
     <footer>
         <div class="footer_upper">
-            <ul>
-                <li>ニュース配信サービス</li>
-                    <ul>
+            <ul class="footer_upper_list">
+                <li class="">ニュース配信サービス</li>
+                    <ul class="footer_news">
                         <li>PR TIMESとは</li>
                         <li>料金・プラン</li>
                         <li>プレリリースを受信したい方へ</li>
@@ -119,8 +119,8 @@ $records = $dao->FindAll();
                         <li>ものしりプロジェクト</li>
                         <li>ログイン</li>
                     </ul>
-                <li>レコメンドサービス</li>
-                    <ul>
+                <li class="">レコメンドサービス</li>
+                    <ul class="footer_recommend">
                         <li>PR TIMES STORY</li>
                         <li>無料FAQならTayori</li>
                         <li>無料メールならTayori</li>
@@ -133,10 +133,10 @@ $records = $dao->FindAll();
                         <li>無料占い・今週の運勢ならisuta</li>
                         <li>無料恋愛占いisuta</li>
                     </ul>
-                <li>PR TIMES公式SNS</li>
-                <ul>
-                    <li>公式Facebookページ</li>
-                    <li>Facebookカテゴリ</li>
+                <li class="">PR TIMES公式SNS</li>
+                    <ul class="footer_sns">
+                        <li>公式Facebookページ</li>
+                        <li>Facebookカテゴリ</li>
                         <select name="" id="">
                             <option value="PR TIMES TV"></option>
                             <option value="テクノロジー"></option>
@@ -156,8 +156,41 @@ $records = $dao->FindAll();
                         </select>
                     <li>公式Twitterページ</li>
                     <li>Twitterカテゴリ</li>
+                    <select name="" id="">
+                            <option value="PR TIMES TV"></option>
+                            <option value="ニュース"></option>
+                            <option value="テクノロジー"></option>
+                            <option value="アプリケーション"></option>
+                            <option value="スタートアップ"></option>
+                            <option value="エンタメ"></option>
+                            <option value="ビューティ"></option>
+                            <option value="ファッション"></option>
+                            <option value="ライフスタイル"></option>
+                            <option value="トラベル"></option>
+                            <option value="グルメ"></option>
+                            <option value="ゲーム"></option>
+                            <option value="スポーツ"></option>
+                            <option value="ビデオ"></option>
+                            <option value="ビジネス"></option>
+                            <option value="マーケティング"></option>
+                    </select>
                 </ul>
             </ul>
+        </div>
+        <div class="footer_bottom">
+            <ul>
+                <li>会社概要</li>
+                <li>プライバシーポリシー</li>
+                <li>情報セキュリティ</li>
+                <li>プレリリース掲載基準</li>
+                <li>利用規約</li>
+            </ul>
+            <ul>
+                <li>企業様のお問い合わせ</li>
+                <li>報道関係者様からのお問い合わせ</li>
+                <li>一般の皆様からのお問い合わせ</li>
+            </ul>
+            <span>Copyright&copy; PR TIMES Inc. All Rights Reserved.</span>
         </div>
     </footer>
 </body>
