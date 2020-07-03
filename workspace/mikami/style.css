@@ -68,7 +68,13 @@ hr{
 .main_left ul{
     list-style: none;
 }
+/* .pv_ranking ul{
+    display: flex;
+    /* flex-direction: column; */
+/* } */
 .pv_ranking li{
+    display: flex;
+    flex-direction: row;
     padding: 16px 0px;
     margin: 20px;
 }
