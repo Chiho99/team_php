@@ -64,21 +64,10 @@
               <!-- CSS用仮データ -->
                 <li>
                     <img src="https://prtimes.jp/i/21601/30/resize/d21601-30-496399-0.png"><br>
-                    <span>在庫速報.com、子供用・女性用の「小さめマスク」の商品検索に対応</span><br>
+                    <div class="title"><h3>在庫速報.com、子供用・女性用の「小さめマスク」の商品検索に対応</h3>
+                    <span id="content">ここに詳細表示</span>
+                    </div>  
                 </li><hr>
-                <li>
-                    <img src="https://prtimes.jp/i/18230/24/resize/d18230-24-709383-2.png"><br>
-                    <span>コロナ禍に直面する業者のフードロスや食品ロス削減を支援、「買って応援、食べて応援」できる通販マーケットプレイス「Wakeari（ワケアリ）」がクレジットカード決済機能を追加</span><br>
-                </li><hr>
-                <li>
-                    <img src="https://prtimes.jp/i/18230/23/resize/d18230-23-199878-0.png"><br>
-                    <span>マスク1枚の最安値が17円」とさらに下落、「マスク通販最安値.com」のマスク価格定点観測（5月22日時点</span><br>
-                </li><hr>
-                <li>
-                    <img src="https://prtimes.jp/i/30268/259/resize/d30268-259-358451-5.jpg"><br>
-                    <span>推しの香りがあなたのそばに⁉ 「ホロライブ」所属タレントをイメージした、100％天然精油配合のマスク用アロマスプレー『HOLO AROMA!』の発売決定！</span><br>
-                </li><hr>
-
               <!-- もっと見るボタンをランキングリスト一番下のデータの次のリスト -->
                 <li class="load_more">
                     <button class="load_more_btn">もっと見る</button>
@@ -155,7 +144,7 @@
                         <li><a href="xpage1.php?cat=3&lim=5">マーケティング・リサーチ</a></li>
                         <li><a href="xpage1.php?cat=3&lim=5">セールス・営業</a></li>
                         <li><a href="xpage1.php?cat=3&lim=5">就職・転職。人材派遣・アルバイト</a></li>
-                        <li><a href="xpage1.php?cat=3&lim=5">資格・留学・語学<</a>/li>
+                        <li><a href="xpage1.php?cat=3&lim=5">資格・留学・語学<</a></li>
                         <li><a href="xpage1.php?cat=3&lim=5">学校・大学</a></li>
                         <li><a href="xpage1.php?cat=3&lim=5">学習塾・予備校・通信教育</a></li>
                         <li><a href="xpage1.php?cat=3&lim=5">保育・幼児教育</a></li>

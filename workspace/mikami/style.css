@@ -46,7 +46,13 @@ img{
     /* height: 70%; */
 }
 
-
+/* コンテンツのホバー */
+/* .title span{
+    display: none;
+}
+.content:hover{
+    display: block;
+} */
 .header_upper{
     display: flex;
     flex-direction: row;
