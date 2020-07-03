@@ -57,50 +57,9 @@
             <h2>PVランキング一覧</h2><hr>
             <ul class="pv_ranking">
                 <!-- ここにPVランキングデータを反映 -->
-                <?php
-      $category = $_GET["category"];
-      // $category = $_GET["date"];
-
-      $sql = null;$res = null;$dbh = null;
-
-          $dsn = 'mysql:dbname=prtimes;host=localhost';
-          $user = 'root';
-          $password='Ycyc2112#';
-          $dbh = new PDO($dsn,$user,$password);
-
-          $sql = "select * from pvYu where Category = " .$category;
-
-          $res = $dbh->query($sql);
-
-          foreach($res as $value) {
-              $hizuke = $value["hizuke"];
-              $pvNumber = $value["pvNumber"];
-              $Category = $value["Category"];
-              $title = $value["title"];
-              $comID = $value["comID"];
-              $relID = $value["relID"];
-              $url = $value["url"];
-              $imgUrl = $value["imgUrl"];
-              print $hizuke;
-              print $pvNumber;
-              print $Category;
-              print $url;
-              print $imgUrl;
-              print $url;
-              print '<li>';
-              print '<img src="' .$imgUrl .'"><br>';
-              print '<div class="title"><h3>' .$title .'"><br>';
-              print '<span id="content">' .$pvNumber .'</span>';
-              print '</div>';
-              print '</li><hr>';
-
-
-          }
-
-
-
-
-      ?>
+                <?php for($a = 0;$a < 30;$a++) { ?>
+                  <li></li><hr class="pv_bar">
+                <?php } ?>
 
               <!-- CSS用仮データ -->
                 <li>
