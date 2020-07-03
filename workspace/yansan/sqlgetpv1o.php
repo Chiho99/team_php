@@ -30,7 +30,7 @@ $bangou=0;
  //   echo "image: ".$row["image"]." cid: " . $row["company"]. " - rid: " . $row["rel"]. " pv:" . $row["pv"]. ":".$row["title"]. "<br>";
 
   $bangou=$bangou+1;
-  echo "<li>".'<img src="'.$row["image"].'"> <br><div class="title" id="'.$bangou.'"><h3>'.$row["title"].'</h3> <span id="content">'.substr(strip_tags($row["body"]),0,200).'</span> </div><br></li><hr class="pv_bar">';
+  echo "<li>".'<img src="'.$row["image"].'"> <br><div class="title" id="'.$bangou.'"><h3>'.$row["title"].'</h3> <span id="content">'.substr(strip_tags($row["body"]),0,100).'</span> </div><br></li><hr class="pv_bar">';
 
   }
 } else {

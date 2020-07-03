@@ -1,0 +1,9 @@
+$('.load_more_btn').click(function(){
+    $(location).attr('href','ÅEÅE);
+});
+$('.title').mouseover(function(){
+    $('#content').fadeIn();
+});
+$('.title').mouseleave(function(){
+    $('#content').hide();
+});

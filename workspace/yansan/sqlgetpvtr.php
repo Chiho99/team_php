@@ -20,18 +20,15 @@ if ($cate."q"=="q") {
 $cate=5;
 }
 
-$sql = "SELECT DISTINCT * FROM pv WHERE category=".$cate." ORDER BY pv LIMIT ".$lim;
+$sql = "SELECT DISTINCT * FROM pv WHERE category=".$cate." AND instrc(title, '".$_GET["trend"]."') ORDER BY pv LIMIT ".$lim;
+echo $sql;
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-$bangou=0;
   // output data of each row
   while($row = $result->fetch_assoc()) {
  //   echo "image: ".$row["image"]." cid: " . $row["company"]. " - rid: " . $row["rel"]. " pv:" . $row["pv"]. ":".$row["title"]. "<br>";
-
-  $bangou=$bangou+1;
-  echo "<li>".'<img src="'.$row["image"].'"> <br><div class="title" id="'.$bangou.'"><h3>'.$row["title"].'</h3> <span id="content">'.substr(strip_tags($row["body"]),0,200).'</span> </div><br></li><hr class="pv_bar">';
-
+  echo "<li>".'<img src="'.$row["image"].'"> <br>'.$row["title"]."<br></li>";
   }
 } else {
   echo "0 results";

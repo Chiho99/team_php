@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    background-color: #294C7A;
+    height: 70px;
+    color: #BFC9D7;
+    padding: 1% 10% 0% 10%;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 10%;
+    margin-top: 20px;
+}
+footer{
+    background-color: #FAFAFA;
+    padding: 0 10%;
+    color: #797979;
+    font-size: 12px;
+}
+footer h2{
+    color: black;
+    font-weight: lighter;
+    font-size: 13px;
+}
+footer span{
+    margin-top: 5px;
+}
+footer ul{
+    /* background-color: slateblue; */
+    padding: 0px;
+}
+select{
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+img{
+    width: 100px;
+    /* height: 70%; */
+}
+
+/* コンテンツのホバー */
+/* .title span{
+    display: none;
+}
+.content:hover{
+    display: block;
+} */
+.header_upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header_upper_right{
+    /* background-color: thistle; */
+    width: 30%;
+   
+}
+.header_upper_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+.header_upper_list a{
+    color: white;
+    text-decoration: none;
+}
+.header_upper_list i{
+    margin-left: 3px;
+}
+.header_upper_right ul{
+    list-style: none;
+    padding-top: 3% ;
+    color: white;
+    padding: 2% 0%;
+}
+.header_bottom ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    list-style: none;
+    padding: none;
+    font-size: 12px;
+    width: 80%;
+    padding-left: 0%;
+}
+
+.header_bottom li{
+    display: flex;
+    flex-direction: row;
+    
+}
+.header_bottom a{
+    color: #BFC9D7;
+    text-decoration: none;
+    margin:0px 8px;
+}
+hr{
+    color: #294C7A;
+    font-weight: bold;
+}
+.main_left{
+    width: 70%;
+}
+.main_left ul{
+    list-style: none;
+}
+/* .pv_ranking ul{
+    display: flex;
+    /* flex-direction: column; */
+/* } */
+.pv_ranking li{
+    display: flex;
+    flex-direction: row;
+    padding: 16px 0px;
+    margin: 20px;
+}
+.load_more{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* width: 100%; */
+}
+.load_more button{
+   border: solid 2px;
+   border-color: transparent;
+   display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-bottom: solid 4px rgb(174, 172, 172);
+  border-radius: 3px;
+}
+.load_more button:active{
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    border-bottom: none;
+}
+.load_more_btn{
+    background-color: rgba(153, 153, 153, 0.2);
+    border: none;
+    border-radius: 2px;
+    height: 38px;
+}
+
+
+.main_right{
+    /* border: solid 2px; */
+    width: 30%;
+    /* background-color: yellow; */
+    margin-left: 40px ;
+}
+.category_order a{
+    color: black;
+    text-decoration: none;
+}
+.main_right i{
+    color: #294C7A;  
+}
+.main_right button{
+    background-color: #999999;
+    border-color: transparent;
+    border-radius: 5px;
+   
+}
+.main_right input{
+    border-color: #999999;
+    opacity: 0.8;
+    border: solid 1px;
+    /* border-right: transparent; */
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+.pv_category{
+    margin-left: 40px;
+}
+.pv_category ol{
+    padding-top: 20px;
+    padding-left: 0px;
+}
+.footer_upper{
+    padding-top: 73px;
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer_upper ul{
+    list-style: none;
+}
+.footer_news ul{
+    padding-left: 0%;
+}
+.footer_recommend_wrap{
+  display: flex; 
+  flex-direction: column; 
+}
+.footer_news a, .footer_recommend a, .footer_recommend_wrap a, .footer_sns a,.footer_bottom a{
+    color: #797977;
+    text-decoration: none;
+}
+.footer_news li, .footer_recommend li, .footer_recommend_wrap li, .footer_sns li,.footer_bottom li{
+    margin-bottom: 22px;
+}
+.footer_bottom{
+    margin: 16px 0px 12px;
+}
+.footer_bottom ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.footer_bottom1 li{
+    margin: 10px 30px 5px 0px;
+
+}
+.footer_bottom2 li{
+    margin: 10px 30px 10px 0px;
+}
