@@ -66,10 +66,9 @@
                   // $category = $_GET["date"];
                   print 'かてごりー' .$category .'の場合';
                   print"<br />" ."<br />" ."<br />" ."<br />" ."<br />" ."<br />";
+              ​    $sql = null;$res = null;$dbh = null;
               ​
-                  $sql = null;$res = null;$dbh = null;
-              ​
-                      $dsn = 'mysql:dbname=prtimes;hoat=localhost';
+                      $dsn = 'mysql:dbname=prtimes;host=localhost';
                       $user = 'root';
                       $password='Ycyc2112#';
                       $dbh = new PDO($dsn,$user,$password);
@@ -88,13 +87,13 @@
                           $url = $value["url"];
                           $imgUrl = $value["imgUrl"];
                           <li>
-                          print "日付け：" .$hizuke ."<br />";
-                          print "PV数" .$pvNumber ."<br />";
-                          print "かてごりー：" .$Category ."<br />";
-                          print $url;
-                          print "写真のURl:" .$imgUrl ."<br />";
-                          print "写真のURl:" .$url ."<br />";
-                          print"<br />" ."<br />" ."<br />" ."<br />" ."<br />" ."<br />";
+                          echo "日付け：" .$hizuke ."<br />";
+                          echo "PV数" .$pvNumber ."<br />";
+                          echo "かてごりー：" .$Category ."<br />";
+                          echo $url;
+                          echo "写真のURl:" .$imgUrl ."<br />";
+                          echo "写真のURl:" .$url ."<br />";
+                          echo"<br />" ."<br />" ."<br />" ."<br />" ."<br />" ."<br />";
                           </li><hr class="pv_bar">
                       }
               ​
