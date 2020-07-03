@@ -57,66 +57,63 @@
             <h2>PVランキング一覧</h2><hr>
             <ul class="pv_ranking">
                 <!-- ここにPVランキングデータを反映 -->
-              <!--<?php for($a = 0;$a < 30;$a++) { ?>
+              <?php for($a = 0;$a < 30;$a++) { ?>
                 <li></li><hr class="pv_bar">
-              <?php } ?>-->
+              <?php } ?>
+
 
               <?php
-                  $category = $_GET["category"];
-                  // $category = $_GET["date"];
-                  print 'かてごりー' .$category .'の場合';
-                  print"<br />" ."<br />" ."<br />" ."<br />" ."<br />" ."<br />";
-              ​    $sql = null;$res = null;$dbh = null;
-              ​
-                      $dsn = 'mysql:dbname=prtimes;host=localhost';
-                      $user = 'root';
-                      $password='Ycyc2112#';
-                      $dbh = new PDO($dsn,$user,$password);
+    $category = $_GET["category"];
+    // $category = $_GET["date"];
 
-                      $sql = "select * from pvYu where Category = " .$category;
+    $sql = null;$res = null;$dbh = null;
 
-                      $res = $dbh->query($sql);
+        $dsn = 'mysql:dbname=prtimes;host=localhost';
+        $user = 'root';
+        $password='Ycyc2112#';
+        $dbh = new PDO($dsn,$user,$password);
 
-                      foreach($res as $value) {
-                          $hizuke = $value["hizuke"];
-                          $pvNumber = $value["pvNumber"];
-                          $Category = $value["Category"];
-                          $title = $value["title"];
-                          $comID = $value["comID"];
-                          $relID = $value["relID"];
-                          $url = $value["url"];
-                          $imgUrl = $value["imgUrl"];
-                          <li>
-                          echo "日付け：" .$hizuke ."<br />";
-                          echo "PV数" .$pvNumber ."<br />";
-                          echo "かてごりー：" .$Category ."<br />";
-                          echo $url;
-                          echo "写真のURl:" .$imgUrl ."<br />";
-                          echo "写真のURl:" .$url ."<br />";
-                          echo"<br />" ."<br />" ."<br />" ."<br />" ."<br />" ."<br />";
-                          </li><hr class="pv_bar">
-                      }
-              ​
-                  ?>
+        $sql = "select * from pvYu where Category = " .$category;
+
+        $res = $dbh->query($sql);
+
+        foreach($res as $value) {
+            $hizuke = $value["hizuke"];
+            $pvNumber = $value["pvNumber"];
+            $Category = $value["Category"];
+            $title = $value["title"];
+            $comID = $value["comID"];
+            $relID = $value["relID"];
+            $url = $value["url"];
+            $imgUrl = $value["imgUrl"];
+            print $hizuke;
+            print $pvNumber;
+            print $Category;
+            print $url;
+            print $imgUrl;
+            print $url;
+            print '<li>';
+            print '<img src="' .$imgUrl .'"><br>';
+            print '<div class="title"><h3>' .$title .'"><br>';
+            print '<span id="content">' .$pvNumber .'</span>';
+            print '</div>';
+            print '</li><hr>';
+
+
+        }
+
+
+
+
+    ?>
 
               <!-- CSS用仮データ -->
                 <li>
                     <img src="https://prtimes.jp/i/21601/30/resize/d21601-30-496399-0.png"><br>
-                    <span>在庫速報.com、子供用・女性用の「小さめマスク」の商品検索に対応</span><br>
+                    <div class="title"><h3>在庫速報.com、子供用・女性用の「小さめマスク」の商品検索に対応</h3>
+                    <span id="content">ここに詳細表示</span>
+                    </div>
                 </li><hr>
-                <li>
-                    <img src="https://prtimes.jp/i/18230/24/resize/d18230-24-709383-2.png"><br>
-                    <span>コロナ禍に直面する業者のフードロスや食品ロス削減を支援、「買って応援、食べて応援」できる通販マーケットプレイス「Wakeari（ワケアリ）」がクレジットカード決済機能を追加</span><br>
-                </li><hr>
-                <li>
-                    <img src="https://prtimes.jp/i/18230/23/resize/d18230-23-199878-0.png"><br>
-                    <span>マスク1枚の最安値が17円」とさらに下落、「マスク通販最安値.com」のマスク価格定点観測（5月22日時点</span><br>
-                </li><hr>
-                <li>
-                    <img src="https://prtimes.jp/i/30268/259/resize/d30268-259-358451-5.jpg"><br>
-                    <span>推しの香りがあなたのそばに⁉ 「ホロライブ」所属タレントをイメージした、100％天然精油配合のマスク用アロマスプレー『HOLO AROMA!』の発売決定！</span><br>
-                </li><hr>
-
               <!-- もっと見るボタンをランキングリスト一番下のデータの次のリスト -->
                 <li class="load_more">
                     <button class="load_more_btn">もっと見る</button>
@@ -193,7 +190,7 @@
                         <li><a href="xpage1.php?cat=3&lim=5">マーケティング・リサーチ</a></li>
                         <li><a href="xpage1.php?cat=3&lim=5">セールス・営業</a></li>
                         <li><a href="xpage1.php?cat=3&lim=5">就職・転職。人材派遣・アルバイト</a></li>
-                        <li><a href="xpage1.php?cat=3&lim=5">資格・留学・語学<</a>/li>
+                        <li><a href="xpage1.php?cat=3&lim=5">資格・留学・語学<</a></li>
                         <li><a href="xpage1.php?cat=3&lim=5">学校・大学</a></li>
                         <li><a href="xpage1.php?cat=3&lim=5">学習塾・予備校・通信教育</a></li>
                         <li><a href="xpage1.php?cat=3&lim=5">保育・幼児教育</a></li>
