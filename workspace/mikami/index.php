@@ -7,7 +7,7 @@
 // FindAllメソッドを使用してテーブルのすべてのレコードを取得
 // $records = array("title", "title", "title", "title", "title", "title");
  ?>
- 
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -55,8 +55,8 @@
             PVランキング一覧<hr>
             <ul class="pv_ranking">
                 <!-- ここにPVランキングデータを反映 -->
-              <?php foreach($records as $record) {?>
-                <li><?=$record["tmp"] ?></li><hr class="pv_bar">
+              <?php for($a = 0;$a < 30;$a++) { ?>
+                <li></li><hr class="pv_bar">
               <?php } ?>
 
               <!-- CSS用仮データ -->
@@ -69,11 +69,11 @@
                     <span>コロナ禍に直面する業者のフードロスや食品ロス削減を支援、「買って応援、食べて応援」できる通販マーケットプレイス「Wakeari（ワケアリ）」がクレジットカード決済機能を追加</span><br>
                 </li><hr>
                 <li>
-                    <img src="https://prtimes.jp/i/18230/23/resize/d18230-23-199878-0.png"><br> 
+                    <img src="https://prtimes.jp/i/18230/23/resize/d18230-23-199878-0.png"><br>
                     <span>マスク1枚の最安値が17円」とさらに下落、「マスク通販最安値.com」のマスク価格定点観測（5月22日時点</span><br>
                 </li><hr>
                 <li>
-                    <img src="https://prtimes.jp/i/30268/259/resize/d30268-259-358451-5.jpg"><br> 
+                    <img src="https://prtimes.jp/i/30268/259/resize/d30268-259-358451-5.jpg"><br>
                     <span>推しの香りがあなたのそばに⁉ 「ホロライブ」所属タレントをイメージした、100％天然精油配合のマスク用アロマスプレー『HOLO AROMA!』の発売決定！</span><br>
                 </li><hr> -->
 
