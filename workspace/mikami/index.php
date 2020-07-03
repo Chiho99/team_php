@@ -16,6 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/035034ff28.js" crossorigin="anonymous"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="main.js"></script>
     <title>PV ranking</title>
 </head>
 <body>
@@ -278,5 +280,6 @@
             <span>Copyright&copy; PR TIMES Inc. All Rights Reserved.</span>
         </div>
     </footer>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
