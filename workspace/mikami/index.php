@@ -57,16 +57,57 @@
             <h2>PVランキング一覧</h2><hr>
             <ul class="pv_ranking">
                 <!-- ここにPVランキングデータを反映 -->
-              <?php for($a = 0;$a < 30;$a++) { ?>
-                <li></li><hr class="pv_bar">
-              <?php } ?>
+                <?php
+      $category = $_GET["category"];
+      // $category = $_GET["date"];
+
+      $sql = null;$res = null;$dbh = null;
+
+          $dsn = 'mysql:dbname=prtimes;host=localhost';
+          $user = 'root';
+          $password='Ycyc2112#';
+          $dbh = new PDO($dsn,$user,$password);
+
+          $sql = "select * from pvYu where Category = " .$category;
+
+          $res = $dbh->query($sql);
+
+          foreach($res as $value) {
+              $hizuke = $value["hizuke"];
+              $pvNumber = $value["pvNumber"];
+              $Category = $value["Category"];
+              $title = $value["title"];
+              $comID = $value["comID"];
+              $relID = $value["relID"];
+              $url = $value["url"];
+              $imgUrl = $value["imgUrl"];
+              print $hizuke;
+              print $pvNumber;
+              print $Category;
+              print $url;
+              print $imgUrl;
+              print $url;
+              print '<li>';
+              print '<img src="' .$imgUrl .'"><br>';
+              print '<div class="title"><h3>' .$title .'"><br>';
+              print '<span id="content">' .$pvNumber .'</span>';
+              print '</div>';
+              print '</li><hr>';
+
+
+          }
+
+
+
+
+      ?>
 
               <!-- CSS用仮データ -->
                 <li>
                     <img src="https://prtimes.jp/i/21601/30/resize/d21601-30-496399-0.png"><br>
                     <div class="title"><h3>在庫速報.com、子供用・女性用の「小さめマスク」の商品検索に対応</h3>
                     <span id="content">ここに詳細表示</span>
-                    </div>  
+                    </div>
                 </li><hr>
               <!-- もっと見るボタンをランキングリスト一番下のデータの次のリスト -->
                 <li class="load_more">
