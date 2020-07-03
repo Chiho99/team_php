@@ -57,9 +57,48 @@
             <h2>PVランキング一覧</h2><hr>
             <ul class="pv_ranking">
                 <!-- ここにPVランキングデータを反映 -->
-              <?php for($a = 0;$a < 30;$a++) { ?>
+              <!--<?php for($a = 0;$a < 30;$a++) { ?>
                 <li></li><hr class="pv_bar">
-              <?php } ?>
+              <?php } ?>-->
+
+              <?php
+                  $category = $_GET["category"];
+                  // $category = $_GET["date"];
+                  print 'かてごりー' .$category .'の場合';
+                  print"<br />" ."<br />" ."<br />" ."<br />" ."<br />" ."<br />";
+              ​
+                  $sql = null;$res = null;$dbh = null;
+              ​
+                      $dsn = 'mysql:dbname=prtimes;hoat=localhost';
+                      $user = 'root';
+                      $password='Ycyc2112#';
+                      $dbh = new PDO($dsn,$user,$password);
+
+                      $sql = "select * from pvYu where Category = " .$category;
+
+                      $res = $dbh->query($sql);
+
+                      foreach($res as $value) {
+                          $hizuke = $value["hizuke"];
+                          $pvNumber = $value["pvNumber"];
+                          $Category = $value["Category"];
+                          $title = $value["title"];
+                          $comID = $value["comID"];
+                          $relID = $value["relID"];
+                          $url = $value["url"];
+                          $imgUrl = $value["imgUrl"];
+                          <li>
+                          print "日付け：" .$hizuke ."<br />";
+                          print "PV数" .$pvNumber ."<br />";
+                          print "かてごりー：" .$Category ."<br />";
+                          print $url;
+                          print "写真のURl:" .$imgUrl ."<br />";
+                          print "写真のURl:" .$url ."<br />";
+                          print"<br />" ."<br />" ."<br />" ."<br />" ."<br />" ."<br />";
+                          </li><hr class="pv_bar">
+                      }
+              ​
+                  ?>
 
               <!-- CSS用仮データ -->
                 <li>
