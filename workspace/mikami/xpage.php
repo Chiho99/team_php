@@ -1,12 +1,3 @@
-<?php
-// include_once("../togawa/DB/DAO.php");
-
-// DAOのインスタンスを生成
-// $dao = new DAO();
-
-// FindAllメソッドを使用してテーブルのすべてのレコードを取得
-$records = array("title", "title", "title", "title", "title", "title");
- ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,13 +45,11 @@ $records = array("title", "title", "title", "title", "title", "title");
             PVランキング一覧<hr>
             <ul class="pv_ranking">
                 <!-- ここにPVランキングデータを反映 -->
-              <?php foreach($records as $record) {?>
-                <li><?=$record["tmp"] ?></li><hr class="pv_bar">
-              <?php } ?>
+              <?php   include('sqlgetpv1.php'); ?>
               <!-- もっと見るボタンをランキングリスト一番下のデータの次のリスト -->
-                <li class="load_more">
+            <li class="load_more">
                     <button class="load_more_btn">もっと見る</button>
-                </li>
+                </li>    
             </ul>
 
         </div>
@@ -73,8 +62,8 @@ $records = array("title", "title", "title", "title", "title", "title");
                     <ol>
                         <li>パソコン・周辺機器</li>
                         <li>パソコンソフトウェア</li>
-                        <li>プロバイダ・回線接続</li>
-                        <li>ネットサービス</li>
+                        <li><a href="xpage1.php?cat=3&lim=5">プロバイダ・回線接続<</a></li>
+                        <li><a href="xpage1.php?cat=4&lim=5">ネットサービス</a></li>
                         <li>スマートフォンアプリ</li>
                         <li>サーバ・周辺機器</li>
                         <li>ネットワーク・ネットワーク機器</li>
