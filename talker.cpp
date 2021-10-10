@@ -18,12 +18,7 @@ int main(int argc, char **argv)
   int count = 0;
   while (ros::ok())
   {
-//    std_msgs::String msg;
     geometry_msgs::Twist twist;
-//    std::stringstream ss;
-//    ss << "hello world " << count;
-//    msg.data = ss.str();
-//    ROS_INFO("%s", msg.data.c_str());
     twist.linear.x=count*(count%2);
     twist.angular.z=count*(1-count%2);
     
